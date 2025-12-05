@@ -3,19 +3,19 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // === Basic configuration ===
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'Astro Theme Pure',
+  title: 'Hancheu\'s Site 🚀',
   /** Will be used in index page & copyright declaration */
-  author: 'Pure Lab',
+  author: 'Hancheu_JC',
   /** Description metadata for your website. Can be used in page metadata. */
-  description: 'Stay hungry, stay foolish',
+  description: 'Go get some fries on the pier',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
   favicon: '/favicon/favicon.ico',
   /** The default social card image for your site which should be a path to an image in the `public/` directory. */
   socialCard: '/images/social-card.png',
   /** Specify the default language for this site. */
   locale: {
-    lang: 'en-US',
-    attrs: 'en_US',
+    lang: 'zh-CN',
+    attrs: 'zh_CN',
     // Date locale
     dateLocale: 'en-US',
     dateOptions: {
@@ -50,7 +50,7 @@ export const theme: ThemeUserConfig = {
   header: {
     menu: [
       { title: 'Blog', link: '/blog' },
-      { title: 'Docs', link: '/docs' },
+      // { title: 'Docs', link: '/docs' },
       { title: 'Projects', link: '/projects' },
       { title: 'Links', link: '/links' },
       { title: 'About', link: '/about' }
@@ -64,11 +64,11 @@ export const theme: ThemeUserConfig = {
     // year: `© 2019 - ${new Date().getFullYear()}`,
     links: [
       // Registration link
-      {
-        title: 'Moe ICP 114514',
-        link: 'https://icp.gov.moe/?keyword=114514',
-        style: 'text-sm' // Uno/TW CSS class
-      },
+      // {
+      //   title: 'Moe ICP 114514',
+      //   link: 'https://icp.gov.moe/?keyword=114514',
+      //   style: 'text-sm' // Uno/TW CSS class
+      // },
       {
         title: 'Travelling',
         link: 'https://www.travellings.cn/go.html',
@@ -132,15 +132,15 @@ export const integ: IntegrationUserConfig = {
   quote: {
     // Hitokoto
     // https://developer.hitokoto.cn/sentence/#%E8%AF%B7%E6%B1%82%E5%9C%B0%E5%9D%80
-    // server: 'https://v1.hitokoto.cn/?c=i',
-    // target: `(data) => (data.hitokoto || 'Error')`
+    server: 'https://v1.hitokoto.cn/?c=i',
+    target: `(data) => (data.hitokoto || 'Error')`
     // Quoteable API (down temporarily)
     // https://github.com/lukePeavey/quotable
     // server: 'https://api.quotable.io/quotes/random?maxLength=60',
     // target: `(data) => data[0].content || 'Error'`
     // DummyJSON
-    server: 'https://dummyjson.com/quotes/random',
-    target: `(data) => (data.quote.length > 80 ? \`\${data.quote.slice(0, 80)}...\` : data.quote || 'Error')`
+    // server: 'https://dummyjson.com/quotes/random',
+    // target: `(data) => (data.quote.length > 80 ? \`\${data.quote.slice(0, 80)}...\` : data.quote || 'Error')`
   },
   // UnoCSS typography
   // See: https://unocss.dev/presets/typography
